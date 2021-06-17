@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Persnal Page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="Home.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+
+    <div class="header">
+    <!-- lOGO -->
+    <div class="col-xs-12 col-md-8">
+    <img src="Logo2.jpg" alt="Logo icon" width="70" height="70"></div>
+    <!-- MENU -->
+    <div class="scrollmenu"><div class="col-xs-6 col-md-4">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a></div>
+    </div>
+    </div>
+  </div>
+    <div class="line">
+
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+    <!-- IMG WITH TEXT OVER -->
+    <div class="containerC" id="home">
+    <img src="hello.jpg" alt="Logo" style="width:100%;">
+    <div class="centered">Faten Alshammari <i class="icon-bookmark"></i></div>
+    </div></div></div>
+
+
+    <!-- IMG + text  -->
+    <div class="row">
+    <div class="Text-img" id="about">
+      <div class="col-xs-6 ">
+    <img src="me1.png" alt="Logo icon" width="400" height="400"></div>
+    <div class="col-xs-6">
+    <p class="pargraphcolor">I am Faten Al-Shammari, a fresh graduate
+      from AL-Imam Muhammad bin Saud University, majoring in information
+       systems, and interested in systems analysis, design, and database also
+       web programming and security. </p>
+    </div></div></div>
+
+    <!--Portfolio -->
+    <div class="backforimages" id="portfolio">
+    <h3>Portfolio:</h3>
+    <div class="row1">
+    <div class="column"><div class="content">
+      <img src="sallogo.png" alt="SAL Logo icon" width="50%"> <h5>Self- Attendnace and leaving system</h5></div></div>
+    <div class="column">
+      <div class="content"><img src="gym.jpg" alt="Logo icon" width="50%"> <h5>Gym website</h5></div></div>
+    <div class="column">
+      <div class="content"><img src="book.png" alt="Logo icon" width="50%"> <h5>World books website</h5></div></div>
+    </div>
+  </div>
+
+    <!-- CONTACT AND SCRIPT -->
+    <div class="formcontainer" id="contact">
+      <h1>Contact me..</h1>
+      <form action="#" method="post" >
+
+        <label for="name"> Name</label>
+        <input type="text" id="name" name="name" placeholder="Write Your Name">
+
+        <label for="email"> Email</label>
+        <input type="email" id="email" name="email" placeholder="Write Your Email" required>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something" style="height:200px"></textarea>
+
+        <input type="submit" value="Submit" onclick="return Name_Subject_Validation()">
+
+        <script>
+
+
+        function Name_Subject_Validation(){
+          let Name = document.getElementById('name').value;
+          let Subject = document.getElementById('subject').value;
+          let subjectlength=Subject.length;
+
+          if(Name ==""){
+            alert("Name must be filled out");
+            return false;
+          }
+
+          if(subjectlength>500){
+            alert("The Subject must be less than 500");
+            return false;
+            }
+          }
+
+
+        </script>
+      </form>
+    </div>
+    <!--FOOTER -->
+      <footer>
+      <p>Made by Faten Alshammari</p>
+    </footer>
+
+  </div>
+  </body>
+</html>
